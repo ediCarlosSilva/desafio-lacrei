@@ -3,6 +3,9 @@ import { Container } from '../components/styles/Container.styled'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
+
+  document.title = `Home | Desafio Lacrei`
+
   return (
     <Container>
       <div>

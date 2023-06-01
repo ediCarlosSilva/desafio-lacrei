@@ -2,6 +2,9 @@ import React from 'react'
 import { Container } from '../components/styles/Container.styled'
 
 const Profissional = () => {
+
+  document.title = `Profissional | Desafio Lacrei`;
+
   return (
     <Container>
       <div>

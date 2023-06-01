@@ -11,7 +11,6 @@ import Home from "./pages/Home";
 import PessoaUsuaria from "./pages/PessoaUsuaria";
 import Profissional from "./pages/Profissional";
 
-
 const theme = {
   colors: {
     header: 'rgb(238, 238, 238)',
@@ -23,7 +22,9 @@ const theme = {
   laptop: "1024px"
 }
 
+
 function App() {
+
   return (
     <ThemeProvider theme={theme}>
      <>

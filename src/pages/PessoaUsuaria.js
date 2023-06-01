@@ -2,6 +2,9 @@ import React from 'react'
 import { Container } from '../components/styles/Container.styled'
 
 const PessoaUsuaria = () => {
+
+  document.title = `Pessoa Usuária | Desafio Lacrei`;
+
   return (
     <Container>
       <div>
