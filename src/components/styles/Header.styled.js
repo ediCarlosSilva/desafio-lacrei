@@ -16,6 +16,11 @@ export const StyledHeader = styled.header`
     @media (max-width: ${({theme}) => theme.laptop}) {
         padding: 0.5rem 2rem;
     }
+
+    @media (max-width: ${({ theme}) => theme.mobile}) {
+        padding: 0.5rem 1rem;
+        flex-direction: column;
+    }
 `
 
 export const Logo = styled.a`
@@ -44,7 +49,17 @@ export const Nav = styled.nav`
         color: rgb(1, 135, 98);
     }
 
+    // ajuste reponsivo para desktop/mobile
     @media (max-width: ${({theme}) => theme.laptop}) {
         gap: 2rem;
+    }
+
+    // ajuste responsivo para mobile 
+    @media (max-width: ${({ theme}) => theme.mobile}) {
+        gap: 1rem;
+
+        & a {
+            font-size: 0.875rem;
+        }
     }
 `

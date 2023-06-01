@@ -31,7 +31,21 @@ export const StyledFooter = styled.footer`
         color: rgb(81, 81, 81);
     }
 
-    @media (max-width: ${({theme}) => theme.laptop}) {
+    @media (max-width: ${({ theme }) => theme.laptop}) {
         margin: 0px 2rem;
+    }
+
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+        margin: 0px 1rem;
+        padding-top: 1rem;
+
+        & nav {
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        & nav a {
+            font-size: 0.875rem;
+        }
     }
 `

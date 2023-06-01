@@ -83,5 +83,17 @@ export const Container = styled.div`
         }
     }
 
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+        padding: 1rem 1rem 0px;
 
+        & div h2 {
+            font-size: 1.5rem;
+        }
+
+        & div p {
+            line-height: 1.25rem;
+            margin-top: 0.875rem;
+            font-size: 0.875rem;
+        }
+    }
 `
