@@ -13,7 +13,7 @@ export const StyledHeader = styled.header`
     font-weight: bold;
 
 
-    @media (max-width: 1040px) {
+    @media (max-width: ${({theme}) => theme.laptop}) {
         padding: 0.5rem 2rem;
     }
 `
@@ -42,5 +42,9 @@ export const Nav = styled.nav`
 
     & a.active {
         color: rgb(1, 135, 98);
+    }
+
+    @media (max-width: ${({theme}) => theme.laptop}) {
+        gap: 2rem;
     }
 `

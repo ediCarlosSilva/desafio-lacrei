@@ -18,7 +18,7 @@ const theme = {
     body: "#fff",
     footer: '#003333'
   },
-  mobile: '600px',
+  mobile: '540px',
   tablet: "768px",
   laptop: "1024px"
 }

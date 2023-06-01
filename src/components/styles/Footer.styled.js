@@ -30,4 +30,8 @@ export const StyledFooter = styled.footer`
         font-size: 0.75rem;
         color: rgb(81, 81, 81);
     }
+
+    @media (max-width: ${({theme}) => theme.laptop}) {
+        margin: 0px 2rem;
+    }
 `
