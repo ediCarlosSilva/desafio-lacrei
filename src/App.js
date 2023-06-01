@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from "styled-components";
+import GlobalStyles from "./components/styles/Global";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+// componentes
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+// pages
+import Home from "./pages/Home";
+import PessoaUsuaria from "./pages/PessoaUsuaria";
+import Profissional from "./pages/Profissional";
+
+
+const theme = {
+  colors: {
+    header: 'rgb(238, 238, 238)',
+    body: "#fff",
+    footer: '#003333'
+  },
+  mobile: '768px'
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+     <>
+        <GlobalStyles />
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/pessoa-usuaria" element={<PessoaUsuaria />} />
+            <Route path="/profissional" element={<Profissional />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+     </>
+    </ThemeProvider>
   );
 }
 
