@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container } from '../components/styles/Container.styled'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -8,8 +9,8 @@ const Home = () => {
         <h2>Boas vindas a Lacrei Saúde</h2>
         <p className='description'>Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+</p>
         <div className='button-container'>
-            <a className='user-btn' href="/pessoa-usuaria">Pessoa Usuária</a>
-            <a className='pro-btn' href="/profissional">Profissional</a>
+            <Link className='user-btn' to="/pessoa-usuaria">Pessoa Usuária</Link>
+            <Link className='pro-btn' to="/profissional">Profissional</Link>
         </div>
       </div>
       <div>

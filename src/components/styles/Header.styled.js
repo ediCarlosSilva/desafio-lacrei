@@ -11,6 +11,11 @@ export const StyledHeader = styled.header`
     justify-content: space-between;
     background-color: rgb(238, 238, 238);
     font-weight: bold;
+
+
+    @media (max-width: 1040px) {
+        padding: 0.5rem 2rem;
+    }
 `
 
 export const Logo = styled.a`
