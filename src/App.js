@@ -15,7 +15,6 @@ const theme = {
   colors: {
     header: 'rgb(238, 238, 238)',
     body: "#fff",
-    footer: '#003333'
   },
   mobile: '520px',
   tablet: "768px",
