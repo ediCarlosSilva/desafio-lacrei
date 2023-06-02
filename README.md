@@ -3,12 +3,12 @@
 
 ![Badge concluído](https://img.shields.io/badge/STATUS-CONCLUÍDO-green&style=social) 
 
-## Após download execute o comando abaixo para instalar as dependêncais do projeto:
+### Após download execute o comando abaixo para instalar as dependêncais do projeto:
 ```
 npm install
 ```
 
-## Para rodar o projeto localmente, execute:
+### Para rodar o projeto localmente, execute:
 ```
 npm start
 ```
