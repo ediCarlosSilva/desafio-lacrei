@@ -13,5 +13,5 @@ npm install
 npm start
 ```
 
-### Deploy feito utilizando a platafor vercel [aqui](https://desafio-lacrei-rho.vercel.app/).
+### Deploy feito utilizando a plataforma vercel [aqui](https://desafio-lacrei-rho.vercel.app/).
 
