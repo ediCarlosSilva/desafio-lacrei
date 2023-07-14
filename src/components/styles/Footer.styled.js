@@ -16,13 +16,12 @@ export const StyledFooter = styled.footer`
     }
 
     & nav a {
-        color: rgb(31, 31, 31);
+        color: #1F1F1F;
         text-decoration: none;
         transition: all 0.2s ease 0s;
     }
 
     & nav a.active {
-        color: rgb(1, 135, 98);
         font-weight: 700;
     }
 
