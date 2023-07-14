@@ -9,7 +9,7 @@ const Profissional = () => {
     <Container>
       <div>
         <h2>Profissional</h2>
-        <p>Buscamos recrutar pessoas profissionais da saúde que entendam as necessidades e se comprometam com o bem-estar da comunidade LGBTQIAPN+</p>
+        <p>A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado por profissionais de qualidade e que atendam às suas necessidades de forma segura e acolhedora.</p>
         
       </div>
       <div>

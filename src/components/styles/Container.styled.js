@@ -9,7 +9,7 @@ export const Container = styled.div`
     align-items: flex-start;
 
     & > div {
-        max-width: 540px;
+        max-width: 555px;
     }
 
     & div h2 {
