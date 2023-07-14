@@ -41,7 +41,7 @@ export const Container = styled.div`
     }
 
     & div .button-container .user-btn {
-        padding: 0.75rem 2rem;
+        padding: 0.75rem;
         background-color: rgb(1, 135, 98);
         color: rgb(255, 255, 255);
     }
