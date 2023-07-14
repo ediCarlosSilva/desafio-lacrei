@@ -13,7 +13,7 @@ const Footer = () => {
           <NavLink to="/profissional">Profissional</NavLink>
         </nav>
         <SocialIcons />
-        <p>Teste Front-end Lacrei - Edi Carlos</p>
+        <p>Desafio Front-end Lacrei</p>
     </StyledFooter>
   )
 }

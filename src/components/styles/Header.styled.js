@@ -2,15 +2,15 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
     background-color: ${({ theme }) => theme.colors.header};
-
     padding: 0.5rem 4rem;
     -webkit-box-align: center;
     align-items: center;
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    background-color: rgb(238, 238, 238);
     font-weight: bold;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 
     @media (max-width: ${({theme}) => theme.laptop}) {
@@ -27,9 +27,15 @@ export const Logo = styled.a`
     color: #018762;
     font-weight: 700;
     font-size: 2rem;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
     text-decoration: none;
     transition: all 0.2s ease 0s;
+
+    &:hover {
+        opacity: .7;
+    }
 `
 
 export const Nav = styled.nav`
@@ -40,13 +46,17 @@ export const Nav = styled.nav`
 
     & > a {
         text-decoration: none;
-        color: rgb(31, 31, 31);
+        color: #1F1F1F;
         font-size: 1rem;
         transition: all 0.2s ease 0s;
     }
 
     & a.active {
-        color: rgb(1, 135, 98);
+        color: #018762;
+    }
+
+    & > a:hover {
+        opacity: 0.7;
     }
 
     // ajuste reponsivo para desktop/mobile

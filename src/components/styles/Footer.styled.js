@@ -26,6 +26,10 @@ export const StyledFooter = styled.footer`
         font-weight: 700;
     }
 
+    & nav a:hover {
+        opacity: 0.7;
+    }
+
     & p {
         font-size: 0.75rem;
         color: rgb(81, 81, 81);

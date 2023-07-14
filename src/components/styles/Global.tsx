@@ -1,6 +1,20 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyles = createGlobalStyle`
+export const theme = {
+    colors: {
+      header: '#eee',
+      body: "#fff",
+    },
+    mobile: '520px',
+    tablet: "768px",
+    laptop: "1024px"
+  }
+
+  export type MyProps = {
+    theme: typeof theme
+  }
+
+const GlobalStyles = createGlobalStyle<MyProps>`
 
 * {
     box-sizing: border-box;
@@ -8,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
 
 body {
     background: ${({ theme }) => theme.colors.body};
-    color: hsl(192, 100%, 9%);
+    color: #1f1f1f;
     font-family: 'Nunito', sans-serif;
     margin: 0;
     font: 400 1rem Nunito, sans-serif;

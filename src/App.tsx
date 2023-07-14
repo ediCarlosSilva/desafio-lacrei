@@ -1,5 +1,5 @@
 import { ThemeProvider } from "styled-components";
-import GlobalStyles from "./components/styles/Global";
+import GlobalStyles, {theme} from "./components/styles/Global";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // componentes
@@ -11,22 +11,11 @@ import Home from "./pages/Home";
 import PessoaUsuaria from "./pages/PessoaUsuaria";
 import Profissional from "./pages/Profissional";
 
-const theme = {
-  colors: {
-    header: 'rgb(238, 238, 238)',
-    body: "#fff",
-  },
-  mobile: '520px',
-  tablet: "768px",
-  laptop: "1024px"
-}
-
-
 function App() {
 
   return (
     <ThemeProvider theme={theme}>
-     <>
+      <>
         <GlobalStyles />
         <BrowserRouter>
           <Header />
@@ -37,7 +26,7 @@ function App() {
           </Routes>
           <Footer />
         </BrowserRouter>
-     </>
+      </>
     </ThemeProvider>
   );
 }

@@ -62,6 +62,10 @@ export const Container = styled.div`
         transition: all 0.2s ease 0s;
     }
 
+    & div .button-container .user-btn:hover, & div .button-container .pro-btn:hover {
+        opacity: 0.7;
+    }
+
     & div img {
         width: 100%;
     }

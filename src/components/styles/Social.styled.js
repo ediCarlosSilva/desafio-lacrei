@@ -20,4 +20,8 @@ export const StyledSocialIcons = styled.div`
         width: 40px;
         text-decoration: none;
     }
+
+    a:hover {
+        opacity: 0.7;
+    }
 `
