@@ -44,15 +44,15 @@ export const Container = styled.div`
 
     & div .button-container .user-btn {
         padding: 0.75rem;
-        background-color: rgb(1, 135, 98);
-        color: rgb(255, 255, 255);
+        background-color: #018762;
+        color: #fff;
     }
 
     & div .button-container .pro-btn {
         padding: 0.625rem 2.75rem;
-        color: rgb(1, 135, 98);
-        background-color: rgb(255, 255, 255);
-        border: 2px solid rgb(1, 135, 98);
+        color: #018762;
+        background-color: #fff;
+        border: 2px solid #018762;
     }
 
     & div .button-container .user-btn, & div .button-container .pro-btn {

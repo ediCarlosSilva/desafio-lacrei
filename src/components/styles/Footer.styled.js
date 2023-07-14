@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
     margin: 0px 4rem;
-    border-top: 1px solid rgb(176, 224, 211);
+    border-top: 1px solid #B0E0D3;
     display: flex;
     flex-direction: column;
     -webkit-box-pack: justify;
@@ -31,7 +31,8 @@ export const StyledFooter = styled.footer`
 
     & p {
         font-size: 0.75rem;
-        color: rgb(81, 81, 81);
+        color: #515151;
+        margin: 0;
     }
 
     @media (max-width: ${({ theme }) => theme.laptop}) {
