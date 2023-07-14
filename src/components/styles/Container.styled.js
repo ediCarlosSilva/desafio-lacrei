@@ -38,6 +38,7 @@ export const Container = styled.div`
         align-items: center;
         padding-top: 3rem;
         max-width: 453px;
+        gap: .5rem;
     }
 
     & div .button-container .user-btn {
@@ -60,6 +61,8 @@ export const Container = styled.div`
         border-radius: 0.5rem;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
         transition: all 0.2s ease 0s;
+        width: 192px;
+        text-align: center;
     }
 
     & div .button-container .user-btn:hover, & div .button-container .pro-btn:hover {
@@ -89,6 +92,8 @@ export const Container = styled.div`
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
         padding: 1rem 1rem 0px;
+        min-height: calc(100vh - 230px);
+        justify-content: center;
 
         & div h2 {
             font-size: 1.5rem;
