@@ -14,15 +14,16 @@ export const Container = styled.div`
 
     & div h2 {
         font-size: 3rem;
+        font-weight: bold;
     }
 
     & div p {
         line-height: 2rem;
         margin-top: 2rem;
         padding-left: 1rem;
-        border-left: 5px solid rgb(1, 135, 98);
+        border-left: 5px solid #018762;
         font-size: 1.5rem;
-        color: rgb(81, 81, 81);
+        color: #515151;
     }
 
     & div .description {

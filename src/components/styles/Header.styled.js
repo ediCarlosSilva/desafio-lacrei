@@ -9,9 +9,6 @@ export const StyledHeader = styled.header`
     -webkit-box-pack: justify;
     justify-content: space-between;
     font-weight: bold;
-    /* offset-x | offset-y | blur-radius | spread-radius | color */
-    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
-
 
     @media (max-width: ${({theme}) => theme.laptop}) {
         padding: 0.5rem 2rem;
@@ -27,8 +24,6 @@ export const Logo = styled.a`
     color: #018762;
     font-weight: 700;
     font-size: 2rem;
-    /* offset-x | offset-y | blur-radius | color */
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
     text-decoration: none;
     transition: all 0.2s ease 0s;
@@ -49,6 +44,7 @@ export const Nav = styled.nav`
         color: #1F1F1F;
         font-size: 1rem;
         transition: all 0.2s ease 0s;
+        font-weight: bold;
     }
 
     & a.active {

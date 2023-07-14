@@ -10,7 +10,7 @@ const Home = () => {
     <Container>
       <div>
         <h2>Boas vindas a Lacrei Saúde</h2>
-        <p className='description'>Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+</p>
+        <p className='description'>Uma plataforma segura e acolhedora<br /> para comunidade LGBTQIAPN+</p>
         <div className='button-container'>
             <Link className='user-btn' to="/pessoa-usuaria">Pessoa Usuária</Link>
             <Link className='pro-btn' to="/profissional">Profissional</Link>
